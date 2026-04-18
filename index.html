@@ -33,3 +33,10 @@
 
 </body>
 </html>
+<script>
+  setTimeout(() => {
+    if (window.vkBridge) {
+      vkBridge.send('VKWebAppInit');
+    }
+  }, 500);
+</script>
